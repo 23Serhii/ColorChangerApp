@@ -1,16 +1,46 @@
-# flutter_application
+# ColorChangerApp
+A simple Flutter app that lets you change the background color by tapping or entering text.
+Features
 
-A new Flutter project.
+    Tap anywhere to generate a random background color
+    Select text from a dropdown menu to pick a specific color
+    Text color automatically inverts based on contrast with background
 
-## Getting Started
+Code Overview
 
-This project is a starting point for a Flutter application.
+The app consists of:
 
-A few resources to get you started if this is your first Flutter project:
+    main.dart - Runs the MyApp widget
+    app.dart - Sets up theme and home page
+    home_page.dart - Stateful widget handles color changing logic
+    text_picker.dart - Reusable widget for selecting text
+    random_color.dart - Generates random color values
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Running the App
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To run the app:
+
+    Tap anywhere on the screen to randomly change the background
+    Select text from the dropdown menu to pick a specific color
+    The text color will invert automatically based on contrast
+
+Testing
+
+Tests are located in test/color_changer_test.dart and can be run with:
+
+Copy code
+flutter test
+
+They verify that:
+
+    Tapping updates the background color
+    Entering text updates the color based on the selection
+    Invalid text defaults to a color
+
+Future Improvements
+
+Some ideas for enhancing the app:
+
+    Add more text/color options
+    Animate color transitions
+    Allow custom color selection
