@@ -8,10 +8,8 @@ void main() {
   test('Background color changes when tapped', () {
     var homePage = HomePage();
 
-    // Initial color
     expect(homePage.backgroundColor, Colors.black);
 
-    // Tap to change color
     homePage.changeBackgroundColor(Colors.red);
     expect(homePage.backgroundColor, Colors.red);
   });
@@ -19,10 +17,9 @@ void main() {
   test('Background color changes when text is entered', () {
     var homePage = HomePage();
 
-    // Default text
     expect(homePage.backgroundColor, Colors.black);
 
-    // Enter text
+
     homePage.onTextChanged('Hello');
     expect(homePage.backgroundColor, Colors.green);
 
